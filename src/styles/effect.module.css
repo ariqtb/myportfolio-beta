@@ -1,0 +1,9 @@
+/* styles/fadeIn.css */
+.component {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .component.fade-in {
+    opacity: 1;
+  }
