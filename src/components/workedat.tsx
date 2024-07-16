@@ -17,8 +17,8 @@ const ScrollReveal = dynamic(
   () => {
     return import("../styles/scrollreveal/scrollReveal");
   },
-  {ssr: false}
-)
+  { ssr: false }
+);
 
 export default function Workedat() {
   const data = [
@@ -67,7 +67,10 @@ export default function Workedat() {
 
   return (
     <>
-      <section id="#Worked" className="flex flex-col justify-center sm:flex-row min-h-screen max-w-screen-lg xl:mx-40 py-20">
+      <section
+        id="#Worked"
+        className="flex flex-col justify-center sm:flex-row min-h-screen max-w-screen-lg xl:mx-40 py-20"
+      >
         <ScrollReveal style={{}}>
           <h2 className="w-full flex font-bold text-3xl text-amber-300 mb-10 mt-3">
             Where I&apos;ve Worked
@@ -89,18 +92,25 @@ export default function Workedat() {
               className="w-32 rounded-none bg-transparent p-0 transition ease-in"
               indicatorProps={{
                 className:
-                  "bg-gray-900 border-l-2 border-amber-600 shadow-none rounded-none",
+                "bg-gray-900 border-l-2 border-amber-600 shadow-none rounded-none",
               }}
-              
+              placeholder={undefined}
+              onPointerEnterCapture={undefined}
+              onPointerLeaveCapture={undefined}
             >
               {data.map(({ label, value }) => (
                 <Tab
                   key={value}
                   value={value}
                   className={`${
-                    activeTab === value ? `text-amber-200 border-transparent` : `text-gray-100 border-l-2 border-gray-900`
+                    activeTab === value
+                      ? `text-amber-200 border-transparent`
+                      : `text-gray-100 border-l-2 border-gray-900`
                   }  hover:bg-gray-900 transition-colors delay-75 ease-in-out py-2`}
                   onClick={() => handleTabChange(value)}
+                  placeholder={undefined}
+                  onPointerEnterCapture={undefined}
+                  onPointerLeaveCapture={undefined}
                 >
                   {label}
                 </Tab>
@@ -112,6 +122,9 @@ export default function Workedat() {
                 mount: { y: 0 },
                 unmount: { x: 50 },
               }}
+              placeholder={undefined}
+              onPointerEnterCapture={undefined}
+              onPointerLeaveCapture={undefined}
             >
               {data.map(({ value, desc }) => (
                 <TabPanel
