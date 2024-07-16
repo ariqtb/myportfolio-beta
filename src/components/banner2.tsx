@@ -1,7 +1,7 @@
 export default function Banner2() {
   return (
     <>
-      <div className="flex flex-col justify-center min-h-screen sm:mx-4 md:mx-16">
+      <section id="#Home" className="flex flex-col justify-center min-h-screen sm:mx-4 md:mx-16">
         {/* <div className="w-4/5 min-h-fit pt-10 py-2 px-0 m-0"> */}
           <h2 className="text-xl pb-5 text-amber-300">Hi, my name is</h2>
           {/* <div className="py-2 font-bold"> */}
@@ -21,7 +21,7 @@ export default function Banner2() {
             </h2>
           </a>
         {/* </div> */}
-      </div>
+      </section>
     </>
   );
 }

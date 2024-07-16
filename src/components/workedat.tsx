@@ -1,4 +1,5 @@
 "use client";
+import dynamic from "next/dynamic";
 import { propTypesClassName } from "@material-tailwind/react/types/components/avatar";
 // import ScrollReveal from "../styles/scrollreveal/scrollReveal";
 import {
@@ -11,6 +12,13 @@ import {
   TabPanelStylesType,
 } from "../app/MTailwind";
 import { useState } from "react";
+
+const ScrollReveal = dynamic(
+  () => {
+    return import("../styles/scrollreveal/scrollReveal");
+  },
+  {ssr: false}
+)
 
 export default function Workedat() {
   const data = [
@@ -59,9 +67,9 @@ export default function Workedat() {
 
   return (
     <>
-      <section className="flex flex-col sm:flex-row min-h-screen max-w-screen-lg">
-        {/* <ScrollReveal style={{}}> */}
-          <h2 className="w-full flex font-bold text-3xl text-teal-300 mb-10 mt-3">
+      <section id="#Worked" className="flex flex-col justify-center sm:flex-row min-h-screen max-w-screen-lg xl:mx-40 py-20">
+        <ScrollReveal style={{}}>
+          <h2 className="w-full flex font-bold text-3xl text-amber-300 mb-10 mt-3">
             Where I've Worked
           </h2>
           {/* <div className="flex flex-row gap-10">
@@ -81,7 +89,7 @@ export default function Workedat() {
               className="w-32 rounded-none bg-transparent p-0 transition ease-in"
               indicatorProps={{
                 className:
-                  "bg-blue-gray-900 border-l-2 border-teal-600 shadow-none rounded-none",
+                  "bg-gray-900 border-l-2 border-amber-600 shadow-none rounded-none",
               }}
               
             >
@@ -90,8 +98,8 @@ export default function Workedat() {
                   key={value}
                   value={value}
                   className={`${
-                    activeTab === value ? `text-teal-200 border-transparent` : `text-gray-100 border-l-2 border-blue-gray-900`
-                  }  hover:bg-blue-gray-900 transition-colors delay-75 ease-in-out py-2`}
+                    activeTab === value ? `text-amber-200 border-transparent` : `text-gray-100 border-l-2 border-gray-900`
+                  }  hover:bg-gray-900 transition-colors delay-75 ease-in-out py-2`}
                   onClick={() => handleTabChange(value)}
                 >
                   {label}
@@ -116,7 +124,7 @@ export default function Workedat() {
               ))}
             </TabsBody>
           </Tabs>
-        {/* </ScrollReveal> */}
+        </ScrollReveal>
       </section>
     </>
   );

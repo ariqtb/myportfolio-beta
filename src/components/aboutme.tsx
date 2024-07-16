@@ -1,10 +1,18 @@
 "use client";
-import ScrollReveal from "../styles/scrollreveal/scrollReveal";
+import dynamic from "next/dynamic";
+// import ScrollReveal from "../styles/scrollreveal/scrollReveal";
+
+const ScrollReveal = dynamic(
+  () => {
+    return import("../styles/scrollreveal/scrollReveal");
+  },
+  {ssr: false}
+)
 
 export default function About() {
   return (
     <>
-      <section className="flex flex-col sm:flex-row min-h-screen max-w-screen-lg sm:mx-auto xl:mx-40 py-20">
+      <section id="About" className="flex flex-col sm:flex-row min-h-screen max-w-screen-lg sm:mx-auto xl:mx-40 py-20">
         <ScrollReveal style={{}}>
           <h2 className="w-full flex font-bold text-3xl text-amber-300 mb-10 mt-3">
             About Me
