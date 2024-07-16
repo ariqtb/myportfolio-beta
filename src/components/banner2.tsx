@@ -10,8 +10,8 @@ export default function Banner2() {
           {/* </div> */}
           <div className="w-full">
             <h2 className="max-w-screen-sm mt-6 text-l">
-              I'm a <a href="#" className="font-semibold text-amber-300 hover:text-amber-600 transition-colors">software engineer</a> specializing in building (ocassionally
-              designing) digital experiences. Currently, I'm available and
+              I&apos;m a <a href="#" className="font-semibold text-amber-300 hover:text-amber-600 transition-colors">software engineer</a> specializing in building (ocassionally
+              designing) digital experiences. Currently, I&apos;m available and
               focusing on react (flutter for mobile) and node.
             </h2>
           </div>
