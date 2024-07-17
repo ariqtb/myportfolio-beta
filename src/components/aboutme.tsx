@@ -55,16 +55,16 @@ export default function About() {
               </ul>
               <h1>Second section!</h1>
             </div>
-            <div className="w-full flex flex-col self-center sm:self-start place-items-center left-0 right-0 top-0 bottom-0 max-w-fit hover:-translate-y-1.5 transition-transform duration-300">
-              <figure className="relative h-96 w-full">
+            <div className="w-full flex flex-col self-center sm:self-start place-items-center left-0 right-0 top-0 bottom-0 max-w-fit">
+              <figure className="relative h-auto w-full hover:-translate-y-1.5 bg-[#ffd54f]/90 grayscale-[60%] mix-blend-lighten hover:grayscale-[10%] transition-all duration-300">
                 <Image
-                  className="flex border-4 rounded-lg border-double align-middle hover:scale-100 bg-[#ffd54f]/90 grayscale-[60%] mix-blend-lighten hover:grayscale-[10%] transition-all duration-100"
+                  className="flex border-4 rounded-lg border-double align-middle hover:scale-100"
                   src={"/img/profile.jpg"}
                   alt="closeup_photo"
                   width={300}
                   height={300}
                 />
-                <figcaption className="absolute justify-center bottom-16 left-2/4 flex w-[calc(100%-4rem)] -translate-y-3/4 -translate-x-2/4 rounded-xl bg-white/10 py-3 px-2 shadow-lg shadow-black/5 saturate-200 backdrop-blur-sm">
+                <figcaption className="absolute justify-center bottom-16 left-2/4 flex w-[calc(100%-4rem)] translate-y-10 -translate-x-2/4 rounded-xl bg-white/10 py-3 px-2 shadow-lg shadow-black/5 saturate-200 backdrop-blur-sm">
                   <Typography
                     variant="h6"
                     color="white"
