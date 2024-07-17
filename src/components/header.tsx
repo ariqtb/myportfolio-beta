@@ -1,4 +1,4 @@
-'use client';
+"use client";
 import Link from "next/link";
 import { links } from "@/lib/menu";
 import { link } from "fs";
@@ -20,8 +20,12 @@ function NavList() {
         variant="small"
         color="blue-gray"
         className="p-1 font-medium"
+        
       >
-        <a href="#Banner" className="flex items-center text-blue-gray-100 hover:text-amber-300 transition-colors">
+        <a
+          href="#Banner"
+          className="flex items-center text-blue-gray-100 hover:text-amber-300 transition-colors"
+        >
           Home
         </a>
       </Typography>
@@ -30,8 +34,14 @@ function NavList() {
         variant="small"
         color="blue-gray"
         className="p-1 font-medium"
+        placeholder={undefined}
+        onPointerEnterCapture={undefined}
+        onPointerLeaveCapture={undefined}
       >
-        <a href="#About" className="flex items-center text-blue-gray-100 hover:text-amber-300 transition-colors">
+        <a
+          href="#About"
+          className="flex items-center text-blue-gray-100 hover:text-amber-300 transition-colors"
+        >
           About
         </a>
       </Typography>
@@ -40,8 +50,14 @@ function NavList() {
         variant="small"
         color="blue-gray"
         className="p-1 font-medium"
+        placeholder={undefined}
+        onPointerEnterCapture={undefined}
+        onPointerLeaveCapture={undefined}
       >
-        <a href="#" className="flex items-center text-blue-gray-100 hover:text-amber-300 transition-colors">
+        <a
+          href="#"
+          className="flex items-center text-blue-gray-100 hover:text-amber-300 transition-colors"
+        >
           Blocks
         </a>
       </Typography>
@@ -51,7 +67,10 @@ function NavList() {
         color="blue-gray"
         className="p-1 font-medium"
       >
-        <a href="#" className="flex items-center text-blue-gray-100 hover:text-amber-300 transition-colors">
+        <a
+          href="#"
+          className="flex items-center text-blue-gray-100 hover:text-amber-300 transition-colors"
+        >
           Docs
         </a>
       </Typography>
