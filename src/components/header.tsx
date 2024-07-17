@@ -20,7 +20,9 @@ function NavList() {
         variant="small"
         color="blue-gray"
         className="p-1 font-medium"
-        
+        placeholder={undefined}
+        onPointerEnterCapture={undefined}
+        onPointerLeaveCapture={undefined}
       >
         <a
           href="#Banner"
@@ -66,6 +68,9 @@ function NavList() {
         variant="small"
         color="blue-gray"
         className="p-1 font-medium"
+        placeholder={undefined}
+        onPointerEnterCapture={undefined}
+        onPointerLeaveCapture={undefined}
       >
         <a
           href="#"
@@ -94,13 +99,21 @@ export default function Header() {
 
   return (
     <>
-      <Navbar className="fixed mx-auto max-w-screen-xl px-6 py-3 bg-transparent border-0">
+      <Navbar
+        className="fixed mx-auto max-w-screen-xl px-6 py-3 bg-transparent border-0"
+        placeholder={undefined}
+        onPointerEnterCapture={undefined}
+        onPointerLeaveCapture={undefined}
+      >
         <div className="flex items-center justify-between text-amber-300">
           <Typography
             as="a"
             href="#"
             variant="h6"
             className="mr-4 cursor-pointer py-1.5"
+            placeholder={undefined}
+            onPointerEnterCapture={undefined}
+            onPointerLeaveCapture={undefined}
           >
             Material Tailwind
           </Typography>
@@ -112,6 +125,9 @@ export default function Header() {
             className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
             ripple={false}
             onClick={() => setOpenNav(!openNav)}
+            placeholder={undefined}
+            onPointerEnterCapture={undefined}
+            onPointerLeaveCapture={undefined}
           >
             {openNav ? (
               <XMarkIcon className="h-6 w-6" strokeWidth={2} />
