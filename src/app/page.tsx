@@ -7,7 +7,7 @@ import Workedat from "@/components/workedat";
 
 export default function Home() {
   return (
-    <main className="flex flex-col overflow-x-hidden min-h-screen items-center px-10 sm:px-10 md:px-8 lg:px-36">
+    <main className="flex flex-col overflow-x-hidden min-h-screen items-center px-10 sm:px-10 md:px-8 lg:px-36 bg-gray-900">
       <Header />
       <Banner2 />
       <About />

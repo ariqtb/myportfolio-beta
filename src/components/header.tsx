@@ -25,7 +25,7 @@ function NavList() {
         onPointerLeaveCapture={undefined}
       >
         <a
-          href="#Banner"
+          href="#top"
           className="flex items-center text-blue-gray-100 hover:text-amber-300 transition-colors"
         >
           Home
@@ -60,7 +60,7 @@ function NavList() {
           href="#"
           className="flex items-center text-blue-gray-100 hover:text-amber-300 transition-colors"
         >
-          Blocks
+          Project
         </a>
       </Typography>
       <Typography
@@ -76,7 +76,7 @@ function NavList() {
           href="#"
           className="flex items-center text-blue-gray-100 hover:text-amber-300 transition-colors"
         >
-          Docs
+          Contact
         </a>
       </Typography>
     </ul>
@@ -97,25 +97,59 @@ export default function Header() {
     };
   }, []);
 
+  // const scrollNavbar = () => {
+  const [show, setShow] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  const controlNavbar = () => {
+    if (typeof window !== "undefined") {
+      if (window.scrollY > lastScrollY) {
+        setShow(false);
+      } else {
+        setShow(true);
+      }
+
+      setLastScrollY(window.scrollY);
+    }
+  };
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      window.addEventListener("scroll", controlNavbar);
+
+      return () => {
+        window.removeEventListener("scroll", controlNavbar);
+      };
+    }
+  }, [lastScrollY]);
+
+  // }
+
   return (
     <>
       <Navbar
-        className="fixed mx-auto max-w-screen-xl px-6 py-3 bg-transparent border-0"
+        className={`${
+          show ? "-translate-y-0" : "-translate-y-full"
+        } fixed mx-auto max-w-screen-full px-6 py-3 bg-transparent shadow-none border-0 transform z-[999] transition-transform duration-300`}
         placeholder={undefined}
         onPointerEnterCapture={undefined}
         onPointerLeaveCapture={undefined}
       >
         <div className="flex items-center justify-between text-amber-300">
+          {/* <div className="flex flex-col "> */}
           <Typography
             as="a"
             href="#"
             variant="h6"
-            className="mr-4 cursor-pointer py-1.5"
+            className="mr-4 cursor-pointer pt-1.5"
             placeholder={undefined}
             onPointerEnterCapture={undefined}
             onPointerLeaveCapture={undefined}
           >
-            Material Tailwind
+            <div className="flex flex-col">
+              <span className="w-fit">Personal Profile</span>
+              <span className="w-fit font-light text-xs">Powered by Next.Js & TailwindCSS</span>
+            </div>
           </Typography>
           <div className="hidden lg:block">
             <NavList />
