@@ -18,7 +18,7 @@ function NavList() {
       <Typography
         as="li"
         variant="small"
-        color="blue-gray"
+        color="gray"
         className="p-1 font-medium"
         placeholder={undefined}
         onPointerEnterCapture={undefined}
@@ -34,7 +34,7 @@ function NavList() {
       <Typography
         as="li"
         variant="small"
-        color="blue-gray"
+        color="gray"
         className="p-1 font-medium"
         placeholder={undefined}
         onPointerEnterCapture={undefined}
@@ -50,7 +50,7 @@ function NavList() {
       <Typography
         as="li"
         variant="small"
-        color="blue-gray"
+        color="gray"
         className="p-1 font-medium"
         placeholder={undefined}
         onPointerEnterCapture={undefined}
@@ -66,7 +66,7 @@ function NavList() {
       <Typography
         as="li"
         variant="small"
-        color="blue-gray"
+        color="gray"
         className="p-1 font-medium"
         placeholder={undefined}
         onPointerEnterCapture={undefined}
@@ -130,7 +130,7 @@ export default function Header() {
       <Navbar
         className={`${
           show ? "-translate-y-0" : "-translate-y-full"
-        } fixed mx-auto max-w-screen-full px-6 py-3 bg-transparent shadow-none border-0 transform z-[999] transition-transform duration-300`}
+        } fixed mx-auto max-w-screen-full px-6 py-3 bg-gray-900 shadow-none border-0 transform z-[999] transition-transform duration-300`}
         placeholder={undefined}
         onPointerEnterCapture={undefined}
         onPointerLeaveCapture={undefined}
