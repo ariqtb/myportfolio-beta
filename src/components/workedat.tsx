@@ -69,7 +69,7 @@ export default function Workedat() {
     <>
       <section
         id="#Worked"
-        className="flex flex-col justify-center sm:flex-row min-h-screen max-w-screen-lg xl:mx-40 py-20"
+        className="flex flex-col justify-center sm:flex-row min-h-screen max-w-screen-lg mx-auto px-5 py-10"
       >
         <ScrollReveal style={{}}>
           <h2 className="w-full flex font-bold text-3xl text-amber-300 mb-10 mt-3">

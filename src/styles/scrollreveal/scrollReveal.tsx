@@ -1,4 +1,4 @@
-// "use client";
+"use client";
 import React, { useRef, useEffect, FC, CSSProperties } from "react";
 import scrollReveal from "scrollreveal";
 import "./scrollReveal.module.css";
