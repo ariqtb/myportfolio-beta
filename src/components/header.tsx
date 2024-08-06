@@ -1,7 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
 
-import { MenuToggle } from "./animateComps/menuToggle";
 
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { motion } from "framer-motion";
