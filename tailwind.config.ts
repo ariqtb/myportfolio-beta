@@ -50,7 +50,7 @@ const config: Config = {
       }
     },
   },
-  plugins: [addVariablesForColors],
+  plugins: [addVariablesForColors, require("daisyui")],
 };
 
 // This plugin adds each Tailwind color as a global CSS variable, e.g. var(--gray-200).
@@ -65,4 +65,4 @@ function addVariablesForColors({ addBase, theme }: any) {
   });
 }
 
-export default withMT(config);
+export default config;

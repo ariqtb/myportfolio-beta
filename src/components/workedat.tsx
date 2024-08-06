@@ -69,7 +69,7 @@ export default function Workedat() {
     <>
       <section
         id="#Worked"
-        className="flex flex-col justify-center sm:flex-row min-h-screen max-w-screen-lg mx-auto px-5 py-10"
+        className="flex flex-col justify-center sm:flex-row min-h-screen md:min-h-96 max-w-screen-lg mx-auto px-5 py-0"
       >
         <ScrollReveal style={{}}>
           <h2 className="w-full flex font-bold text-3xl text-amber-300 mb-10 mt-3">
@@ -92,7 +92,7 @@ export default function Workedat() {
               className="w-32 rounded-none bg-transparent p-0 transition ease-in"
               indicatorProps={{
                 className:
-                "bg-gray-900 border-l-2 border-amber-600 shadow-none rounded-none",
+                "bg-gray-900 border-l-2 border-amber-300 shadow-none rounded-none",
               }}
               placeholder={undefined}
               onPointerEnterCapture={undefined}
@@ -104,8 +104,8 @@ export default function Workedat() {
                   value={value}
                   className={`${
                     activeTab === value
-                      ? `text-amber-200 border-transparent`
-                      : `text-gray-100 border-l-2 border-gray-900`
+                      ? `text-amber-300 border-transparent`
+                      : `text-gray-100 border-l-2 border-transparent`
                   }  hover:bg-gray-900 transition-colors delay-75 ease-in-out py-2`}
                   onClick={() => handleTabChange(value)}
                   placeholder={undefined}

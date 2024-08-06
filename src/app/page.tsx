@@ -4,6 +4,8 @@ import Banner from "@/components/banner";
 import Banner2 from "@/components/banner2";
 import About from "@/components/aboutme";
 import Workedat from "@/components/workedat";
+import  Project from "@/components/project";
+import Contact from "@/components/contact";
 
 export default function Home() {
   return (
@@ -13,6 +15,8 @@ export default function Home() {
       <Banner2 />
       <About />
       <Workedat />
+      <Project/>
+      <Contact/>
       {/* <Banner /> */}
     </main>
   );

@@ -29,11 +29,11 @@ export default function Banner2() {
             </h2>
           </div>
           <a
-          href="#"
-          className="flex w-fit border rounded-lg font-mono p-2 sm:p-4 px-2 sm:px-5 mt-10 border-amber-300 text-amber-300 hover:text-white hover:border-white transition-colors relative z-10"
+          href="#about"
+          className="flex w-fit border rounded-lg font-mono p-2 sm:p-4 px-2 sm:px-5 mt-10 border-amber-300 text-amber-300 hover:text-white hover:border-white hover:-translate-y-2 transition-all ease-out relative z-10"
         >
           <h2 className="text-sm sm:text-lg font-normal">
-            Check out my course!
+            to know more!
           </h2>
         </a>
         </div>
