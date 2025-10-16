@@ -4,6 +4,7 @@
 import { useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import type { Project } from "@/types/Project";
+import Image from "next/image";
 
 type PortfolioModalProps = {
   project: Project;
@@ -202,7 +203,7 @@ export default function PortfolioModal({ project, onClose }: PortfolioModalProps
               <div ref={trackRef} className="flex w-full h-full">
                 {images.map((src, i) => (
                   <div key={i} className="shrink-0 w-full aspect-auto p-4 rounded-lg bg-gray-800">
-                    <img
+                    <Image
                       src={src}
                       alt={`${project.title} preview ${i + 1}`}
                       className="h-full w-full object-contain select-none pointer-events-none"

@@ -29,10 +29,10 @@ export default function About() {
             <div className="w-full text-gray-300">
               <div>
                 <p className="mb-4">
-                  Hello, My name is Ariq and i'm from Bogor, Indonesia. Started my journey in tech with curiosity
+                  Hello, My name is Ariq and i&apos;m from Bogor, Indonesia. Started my journey in tech with curiosity
                   for how apps work behind the scenes. What began as my hobby in computer parts and my degree
                   in Informatics Management led me learned and quickly grew and engaged into a passion for creating
-                  user-friendly and and functional digital products. Over the years, I've explored
+                  user-friendly and and functional digital products. Over the years, I&apos;ve explored
                   various tech and frameworks both web and mobile, learning to turn ideas into interactive
                   and useful experiences.
                 </p>
@@ -40,10 +40,7 @@ export default function About() {
                   Fast-forward to today, I focus on building responsive websites and mobile apps using 
                   current and modern technologies. I enjoy solving real-world problems through clean code, 
                   intuitive design, and seamless user experiences. Whether working solo or in a team, 
-                  I'm always engaged to learn, improve, and create some meaningful impact through technology.
-                </p>
-                <p className="mb-4">
-                  
+                  I&apos;m always engaged to learn, improve, and create some meaningful impact through technology.
                 </p>
                 <p>
                   Here are a few technologies I’ve been working with recently:
