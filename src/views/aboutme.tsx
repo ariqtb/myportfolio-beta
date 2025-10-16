@@ -2,9 +2,9 @@
 import dynamic from "next/dynamic";
 import Image from "next/image";
 import { Typography } from "@material-tailwind/react";
-import { BackgroundGradient } from "./ui/background-gradient";
+import { BackgroundGradient } from "@/components/ui/background-gradient";
 import { motion } from "framer-motion";
-import { ButtonRotate } from "./animateComps/buttonrotate";
+import { ButtonRotate } from "@/components/animateComps/buttonrotate";
 
 const ScrollReveal = dynamic(
   () => {
@@ -29,28 +29,28 @@ export default function About() {
             <div className="w-full text-gray-300">
               <div>
                 <p className="mb-4">
-                  Hello, My name is Ariq and i like to create website on the
-                  internet. My interest in web development started back in 2022
-                  when i created a cooperative website from RRI -one of familiar
-                  radio station, and it became more challenging .
+                  Hello, My name is Ariq and i'm from Bogor, Indonesia. Started my journey in tech with curiosity
+                  for how apps work behind the scenes. What began as my hobby in computer parts and my degree
+                  in Informatics Management led me learned and quickly grew and engaged into a passion for creating
+                  user-friendly and and functional digital products. Over the years, I've explored
+                  various tech and frameworks both web and mobile, learning to turn ideas into interactive
+                  and useful experiences.
                 </p>
                 <p className="mb-4">
-                  Fast-forward to today, and I’ve had the privilege of working
-                  at an advertising agency, a start-up, a huge corporation, and
-                  a student-led design studio. My main focus these days is
-                  building accessible, inclusive products and digital
-                  experiences at Upstatement for a variety of clients.
+                  Fast-forward to today, I focus on building responsive websites and mobile apps using 
+                  current and modern technologies. I enjoy solving real-world problems through clean code, 
+                  intuitive design, and seamless user experiences. Whether working solo or in a team, 
+                  I'm always engaged to learn, improve, and create some meaningful impact through technology.
                 </p>
                 <p className="mb-4">
-                  I also recently launched a course that covers everything you
-                  need to build a web app with the Spotify API using Node &
-                  React.
+                  
                 </p>
                 <p>
                   Here are a few technologies I’ve been working with recently:
                 </p>
               </div>
               <ul className="grid grid-cols-2 gap-x-4 gap-y-2 list-disc max-w-md mt-4 pl-6">
+                <li className="">SwiftUI</li>
                 <li className="">React</li>
                 <li>Next.js</li>
                 <li>Node.js</li>

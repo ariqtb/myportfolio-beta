@@ -4,8 +4,8 @@ import { useEffect, useState } from "react";
 
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { motion } from "framer-motion";
-import { AnimatedMenu } from "./animateComps/dropdownMenu2";
-import { ButtonRotate } from "./animateComps/buttonrotate";
+import { AnimatedMenu } from "@/components/animateComps/dropdownMenu2";
+import { ButtonRotate } from "@/components/animateComps/buttonrotate";
 
 function NavList() {
   return (

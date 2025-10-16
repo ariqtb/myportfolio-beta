@@ -1,6 +1,6 @@
 "use client";
-import { BackgroundBeams } from "./ui/background-beams";
-import { TextGenerateEffect } from "./ui/text-generate-effect";
+import { BackgroundBeams } from "@/components/ui/background-beams";
+import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 export default function Banner2() {
   // const descText = "I'm a software engineer"
   return (

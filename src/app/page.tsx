@@ -1,11 +1,11 @@
 import Image from "next/image";
-import Header from "@/components/header";
-import Banner from "@/components/banner";
-import Banner2 from "@/components/banner2";
-import About from "@/components/aboutme";
-import Workedat from "@/components/workedat";
-import  Project from "@/components/project";
-import Contact from "@/components/contact";
+import Header from "@/views/header";
+import Banner from "@/views/banner";
+import Banner2 from "@/views/banner2";
+import About from "@/views/aboutme";
+import Workedat from "@/views/workedat";
+import  Project from "@/views/project";
+import Contact from "@/views/contact";
 
 export default function Home() {
   return (
