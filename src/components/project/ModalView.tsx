@@ -207,7 +207,8 @@ export default function PortfolioModal({ project, onClose }: PortfolioModalProps
                       src={src}
                       alt={`${project.title} preview ${i + 1}`}
                       className="h-full w-full object-contain select-none pointer-events-none"
-                      // style={{ height: "auto", width: "auto" }}
+                      height= {500}
+                      width={500}
                       draggable={false}
                     />
                   </div>
