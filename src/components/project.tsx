@@ -45,7 +45,7 @@ export default function Project2() {
                     onClick={() => setSelectedProject(item)}
                     className="flex flex-col mb-6 items-center border border-gray-200 rounded-lg shadow-sm md:flex-row md:max-w-4xl hover:bg-gray-800 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
                 >
-                    <Image className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-96 md:rounded-none md:rounded-s-lg" src={""} alt="" />
+                    <Image className="object-fill w-full rounded-t-lg h-96 md:h-auto md:w-96 md:rounded-none md:rounded-s-lg" src={""} alt="" />
                     <div className="flex flex-col justify-between p-6 leading-normal">
                         <h5 className="mb-2 text-2xl font-bold tracking-tight  text-amber-50 dark:text-white">{item.title}</h5>
                         <p className="mb-3 font-normal text-amber-50 dark:text-amber-50">{item.description}</p>
