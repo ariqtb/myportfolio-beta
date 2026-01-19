@@ -59,7 +59,7 @@ export default function About() {
               <BackgroundGradient className="relative h-auto w-full hover:-translate-y-3 hover:-translate-x-2  grayscale-[50%] hover:grayscale-[10%] transition-all duration-50">
                 <Image
                   className="flex rounded-[22px] align-middle hover:scale-100 object-contain"
-                  src={"/img/profile.jpg"}
+                  src={"/img/profile2.jpeg"}
                   alt="closeup_photo"
                   width={300}
                   height={300}

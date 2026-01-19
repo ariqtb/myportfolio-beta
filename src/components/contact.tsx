@@ -16,7 +16,11 @@ export default function Contact() {
           is always open. Whether you have a question or just want to say hi,
           I’ll try my best to get back to you!
         </p>
-        <button className="mt-2 px-6 py-3 rounded-2xl text-lg font-normal bg-gray-800 text-amber-300 hover:bg-gray-800 hover:border-2 hover:border-gray-700 hover:-translate-y-2 transition-transform ease-out">Say, Hello!</button>
+        <a href="mailto:tubagusariqnaufal@gmail.com">
+        <button className="mt-2 px-6 py-3 rounded-2xl text-lg font-normal bg-gray-800 text-amber-300 hover:bg-gray-800 hover:border-2 hover:border-gray-700 hover:-translate-y-2 transition-transform ease-out">
+          Say, Hello!
+        </button>
+        </a>
       </div>
     </>
   );
