@@ -3,11 +3,11 @@
 
 import { useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
-import type { Project } from "@/types/Project";
+import type { ProjectModel } from "@/types/Project";
 import Image from "next/image";
 
 type PortfolioModalProps = {
-  project: Project;
+  project: ProjectModel;
   onClose: () => void; // parent will set selectedProject(null)
 };
 
