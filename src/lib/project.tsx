@@ -120,7 +120,7 @@ export const ProjectList = [
     subtitle: "Light exercise reminder",
     description:
       "Help desk-based freelancers who work from home by doing light exercise, thereby increasing their daily energy.",
-    paragraph: "The client’s needs are to analyze and evaluate their Gokart race performance using telemetric data such as velocity, timestamps, braking zones, entry/exit points. This project will create a session of race and track the user using build-in gps. After the session, data will appear as telemetric data that helps user to evaluate their performance.",
+    paragraph: "A macOS-based application designed to assist desk-based freelancers working from home, who have dense and unpredictable work schedules, by utilizing pocket time for light exercise to boost daily energy, maintain focus, and sustain work productivity. The application provides customizable exercise reminders, allowing users to set preferred intervals and types of light exercises, ensuring flexibility to accommodate their busy routines.",
     techStack: ["SwiftUI", "SwiftData"],
     role: "PM & Coder",
     responsibilties: [
