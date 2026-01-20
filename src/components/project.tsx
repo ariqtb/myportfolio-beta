@@ -35,7 +35,7 @@ export default function Project() {
           className={`flex flex-col mb-6 p-6 items-center rounded-lg shadow-sm md:flex-row md:max-w-4xl transition opacity-90 hover:opacity-100 hover:bg-gray-800 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700`}
         >
           <Image
-            className="object-fill w-full rounded-t-lg h-72 md:h-auto md:w-72 md:rounded-none md:rounded-s-lg"
+            className="object-fill w-72 rounded-t-lg h-auto md:h-auto md:w-72 md:rounded-none md:rounded-s-lg flex-shrink-0"
             src={project.thumbnail}
             alt=""
             width="200"
@@ -86,19 +86,16 @@ export default function Project() {
             className={`flex flex-col mb-6 items-center rounded-lg shadow-sm md:flex-row md:max-w-4xl
        bg-gray-500 opacity-90 hover:opacity-100 hover:bg-gray-800 dark:border-gray-700 dark:bg-gray-500 dark:hover:bg-gray-700`}
           >
-            <div className="relative w-full md:w-96 h-56 md:h-auto">
+            <div className="relative w-full md:w-72 h-56 min-h-56 md:h-auto flex-shrink-0">
               <Image
                 src={project.thumbnail}
                 alt={project.title}
-                // fill
-                width={200}
-                height={200}
-                // className="object-cover"
+                fill
+                className="object-cover"
                 // sizes="(max-width: 768px) 100vw, 384px"
-                // priority={false}
               />
             </div>
-            <div className="flex flex-col justify-between p-6 leading-normal">
+            <div className="z-10 flex flex-col justify-between p-4 leading-normal">
               <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                 {project.title}
               </h5>

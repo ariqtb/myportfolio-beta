@@ -285,7 +285,7 @@ export default function PortfolioModal({ project, onClose }: PortfolioModalProps
             <section>
               <h4 className="text-sm font-semibold tracking-wide text-amber-300 uppercase">Description</h4>
               <p className="mt-2 text-amber-50/90 leading-relaxed">
-                {project.description ?? "No description provided."}
+                {project.paragraph ?? "No description provided."}
               </p>
             </section>
 

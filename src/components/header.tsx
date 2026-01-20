@@ -1,11 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 
-
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import { motion } from "framer-motion";
 import { AnimatedMenu } from "@/components/animateComps/dropdownMenu2";
-import { ButtonRotate } from "@/components/animateComps/buttonrotate";
 
 function NavList() {
   return (
@@ -46,35 +42,7 @@ function NavList() {
   );
 }
 
-// const animate = () => {
-//   <motion.div
-//     animate={{
-//       scale: [1, 2, 3, 4],
-//       rotate: [0, 0, 270, 270, 0],
-//       borderRadius: ["20%", "20%", "50%", "50%", "20%"],
-//     }}
-//   />;
-// };
-
-// const variants = {
-//   open: { opacity: 1, x: 0 },
-//   closed: { opacity: 0, x: "-100%" },
-// };
-
 export default function Header() {
-  // const [openNav, setOpenNav] = useState(false);
-
-  // const handleWindowResize = () =>
-  //   window.innerWidth >= 960 && setOpenNav(false);
-
-  // useEffect(() => {
-  //   window.addEventListener("resize", handleWindowResize);
-
-  //   return () => {
-  //     window.removeEventListener("resize", handleWindowResize);
-  //   };
-  // }, []);
-
   interface ScrollState {
     scrollY: number;
     text: string;
